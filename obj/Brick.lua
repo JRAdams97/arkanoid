@@ -2,7 +2,7 @@ Brick = Object:extend()
 
 function Brick:new(x_pos, y_pos)
   self.w = 50
-  self.h = 30
+  self.h = 20
   self.x_pos = x_pos
   self.y_pos = y_pos
 end

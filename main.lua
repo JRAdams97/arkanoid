@@ -9,9 +9,9 @@ Object = require 'lib.classic'
 function love.load()
   requireObjs('obj', {})
 
+  level = Level(10, 8)
   ball = Ball(300, 300)
   paddle = Paddle(300, 500)
-  brick = Brick(100, 100)
 end
 
 function love.update(dt)
@@ -20,9 +20,9 @@ function love.update(dt)
 end
 
 function love.draw()
+  level:draw()
   ball:draw()
   paddle:draw()
-  brick:draw()
 end
 
 function love.quit()
